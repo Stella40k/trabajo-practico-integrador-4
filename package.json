@@ -10,5 +10,9 @@
     "run:3": "ts-node src/3_literals_enums.ts",
     "run:5": "ts-node src/5_glossary.ts"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
 }
