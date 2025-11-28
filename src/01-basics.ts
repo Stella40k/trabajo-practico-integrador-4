@@ -1,38 +1,36 @@
-// 01-basics.ts - Tipos fundamentales, Unión e Interfaz
-
-// Tipos fundamentales
+//tipos fundamentales
 console.log("Tipos fundamentales");
 
-let productName: string = "Queso Roquefort";
-let productPrice: number = 1250;
-console.log(`Producto: ${productName}, Precio: $${productPrice}`);
+let productName: string = "Mermelada artesanal";
+let productPrice: number = 450;
+console.log(`Producto: ${productName}, Precio: ${productPrice}`);
 
 console.log("--------------------");
 
-// Tipo Union (Union Type)
+//tpo union (Union Type)
 console.log("Tipo Union (Union Type)");
 
 let productId: string | number;
-productId = "f47ac10b-58cc-4372-a567-0e02b2c3d479";
+productId = "XYZ-2025-0001";
 console.log(productId, typeof productId);
-productId = 987654321;
+productId = 2025;
 console.log(productId, typeof productId);
 
 console.log("--------------------");
 
-// Interfaz Básica
+//interfaz basica
 console.log("Interfaz Básica");
 
 interface Product {
   name: string;
   price: number;
-  inStock?: boolean; // propiedad opcional para variar respecto del compañero
+  description?: string; // campo op para diferenciar
 }
 
 const myProduct: Product = {
-  name: "Queso fresco",
-  price: 760,
-  inStock: true,
+  name: "Mermelada de frambuesa",
+  price: 520,
+  description: "Hecha en casa",
 };
 
 console.log("myProduct:", myProduct);
