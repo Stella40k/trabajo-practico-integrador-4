@@ -1,18 +1,25 @@
 {
-  "name": "trabajo-practico-iv",
+  "name": "typescript",
   "version": "1.0.0",
-  "private": true,
+  "description": "Trabajo Práctico IV - TypeScript",
+  "main": "index.js",
   "scripts": {
+    "basic_types": "tsx src/01-basics.ts",
+    "functions": "tsx src/02-functions.ts",
+    "enums": "tsx src/03-enums.ts",
+    "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "ts-node src/index.ts",
-    "run:1": "ts-node src/1_types_basics.ts",
-    "run:2": "ts-node src/2_updateStock.ts",
-    "run:3": "ts-node src/3_literals_enums.ts",
-    "run:5": "ts-node src/5_glossary.ts"
+    "start": "node dist/index.js"
   },
+  "keywords": [
+    "typescript",
+    "types"
+  ],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@types/node": "^24.10.1",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }
 }
