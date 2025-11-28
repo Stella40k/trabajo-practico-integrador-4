@@ -1,0 +1,14 @@
+{
+  "name": "trabajo-practico-iv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "run:1": "ts-node src/1_types_basics.ts",
+    "run:2": "ts-node src/2_updateStock.ts",
+    "run:3": "ts-node src/3_literals_enums.ts",
+    "run:5": "ts-node src/5_glossary.ts"
+  },
+  "devDependencies": {}
+}
